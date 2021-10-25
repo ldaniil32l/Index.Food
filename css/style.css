@@ -701,4 +701,15 @@ body {
     .shopping-cart {
         margin-left: 5px;
     }
+    .header {
+        justify-content: space-between;
+    }
+    .delivery-week {
+        padding: 20px 0;
+    }
+    .footer-nav {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
