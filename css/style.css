@@ -135,6 +135,7 @@ body {
     align-items: center;
     width: 100px;
     justify-content: space-between;
+    outline: none;
 }
 
 .slider-button {
