@@ -107,7 +107,7 @@ body {
 }
 
 .slide-content{
-    max-width: 400px;
+    max-width: 450px;
     position: relative;
 }
 
@@ -124,6 +124,25 @@ body {
     font-size: 16px;
     line-height: 23px;
     margin-bottom: 30px;
+}
+
+.slider-buttons {
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.slider-button {
+    cursor: pointer;
+}
+
+.swiper {
+    position: relative;
 }
 
 .button-primary {
@@ -149,6 +168,18 @@ body {
 
 .slide-summer {
     background-image: url('../img/summer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-autumn {
+    background-image: url('../img/autum.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-vitamin {
+    background-image: url('../img/vitamin.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -504,4 +535,170 @@ body {
 .social-link {
     margin-left: 20px;
     text-decoration: none;
+}
+
+@media (max-width: 1260px) {
+    .container {
+        max-width: 960px;
+    }
+    .search-form {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .tabs-content {
+        flex-wrap: wrap;
+    }
+    .tabs-card {
+        flex: 50%;
+        max-width: calc(50% - 37px)
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .slide {
+        padding: 70px;
+    }
+    .delivery-card {
+        width: calc(50% - 30px);
+    }
+    .footer-logo {
+        margin-right: 40px;
+    }
+    .adventeges-cards {
+        flex-wrap: wrap;
+    }
+    .adventeges-card {
+        max-width: calc(50% - 37px);
+        width: calc(50% - 37px);
+
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .search-form {
+        order: 1;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .logo {
+        margin-right: 20px;
+    }
+    .promo {
+        flex-wrap: wrap;
+    }
+    .slide {
+        padding: 30px;
+    }
+    .footer-link {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 95%;
+    }
+    .tabs-card {
+        max-width: 80%;
+        margin: calc(20%/2);
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .tabs-link {
+        margin-right: 20px;
+    }
+    .slide {
+        padding: 15px;
+    }
+    .card {
+        min-width: 350px;
+        justify-content: space-around;
+        min-height: 335px;
+    }
+    .card-description {
+        max-width: 300px;
+    }
+    .button-primary {
+        margin-top: -10px;
+    }
+    .adventeges-card {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 80%;
+        max-width: 80%;
+    }
+    .footer-wrapper {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-links {
+        margin-left: 0;
+    }
+    .footer-nav {
+        margin: 10px
+    }
+    .footer-logo {
+        margin-right: 0;
+    }
+    .adventeges {
+        padding-bottom: 30px;
+        padding-top: 40px;
+    }
+    .tabs-link {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .delivery-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .delivery-card {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .button-center {
+        margin-top: 39px;
+        width: 80%;
+    }
+    .card {
+        min-width: 80%;
+    }
+    .slide-title {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .button-primary {
+        margin-top: -20px;
+    }
+    .tabs {
+        flex-wrap: wrap;
+        margin: auto;
+        margin-bottom: 30px;
+        max-width: 80%;
+    }
+    .section-title {
+        margin: auto;
+        margin-bottom: 40px;
+        line-height: 30px;
+        max-width: 80%;
+    }
+    .auth {
+        margin-left: 0;
+    }
+    .shopping-cart {
+        margin-left: 5px;
+    }
 }
